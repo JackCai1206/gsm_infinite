@@ -1623,16 +1623,16 @@ if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct") 
     
     problem, question, solution, opnum, id = drawAllEquan(
-        op_max = 10, 
+        op_max = 5, 
         ip_max = 10, 
         force = True, 
         verbose = False, 
         mod = -1, 
-        strictline = 25, 
-        target_length = "zero_context", 
+        # strictline = 25, 
+        target_length = "8k", 
         number_range = 5, 
         template = "crazy_zootopia", 
-        d = 3, 
+        d = 2, 
         tokenizer = tokenizer, 
     ) 
 
