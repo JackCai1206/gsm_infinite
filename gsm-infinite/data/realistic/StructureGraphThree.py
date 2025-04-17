@@ -183,4 +183,3 @@ class GraphStructure:
             graph_structure = pickle.load(file)
         print(f"GraphStructure loaded from {filename}")
         return graph_structure
-                

@@ -375,7 +375,7 @@ class DependencyGraph:
         # Graph attributes for circular layout
         graph.set_graph_defaults(overlap='false', splines='true', layout='neato') 
         
-        graph.write_png("dependency_graph_2.png") 
+        graph.write("dependency_graph_2.png") 
     
     def visualization_topo(self, topo: List[ParameterNode]): 
         path = os.pathsep + os.getcwd() 
@@ -414,7 +414,7 @@ class DependencyGraph:
         # Graph attributes for circular layout
         graph.set_graph_defaults(overlap='false', splines='true', layout='neato') 
         
-        graph.write_png("topo.png") 
+        graph.write("topo.png") 
     
     def draw3(self): 
         path = os.pathsep + os.getcwd() 
@@ -473,7 +473,7 @@ class DependencyGraph:
         # Graph attributes for circular layout
         graph.set_graph_defaults(overlap='false', splines='true', layout='neato') 
         
-        graph.write_png("dependency_graph_3.png") 
+        graph.write("dependency_graph_3.png") 
     
     def draw4(self, topo: List[ParameterNode]): 
         path = os.pathsep + os.getcwd() 
@@ -544,4 +544,4 @@ class DependencyGraph:
         # Graph attributes for circular layout
         graph.set_graph_defaults(overlap='false', splines='true', layout='neato') 
         
-        graph.write_png("dependency_graph_4.png") 
+        graph.write("dependency_graph_4.png") 
