@@ -1,5 +1,6 @@
 # import generate_answer
 import random
+import time
 import generate_payload
 # import generator_calc
 # from datasets import Dataset
@@ -138,11 +139,6 @@ if __name__ == '__main__':
         if (op < args.min_op):
             continue
         dataset.push_to_hub(f"{args.dataset_name}_{args.length}", split=f"ops_{op}", private=True)
- 
-
-    
-
-    
-
-
+        time.sleep(1)
+        print(f"Dataset for op {op} pushed to hub.")
 
